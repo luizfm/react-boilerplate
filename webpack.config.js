@@ -35,6 +35,14 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader',
@@ -61,6 +69,12 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       _components: path.resolve(__dirname, 'src/components'),
+      _assets: path.resolve(__dirname, 'src/assets'),
+      _views: path.resolve(__dirname, 'src/views'),
+      _routes: path.resolve(__dirname, 'src/routes'),
+      _utils: path.resolve(__dirname, 'src/utils'),
+      _hooks: path.resolve(__dirname, 'src/hooks'),
+      _services: path.resolve(__dirname, 'src/services'),
     },
   },
   plugins: [htmlPlugin, miniCssPlugin],
