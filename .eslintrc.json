@@ -25,6 +25,7 @@
         "import/no-unresolved": "off",
         "no-unused-vars": "off",
         "semi": "off",
-        "indent": [2, 2, {"SwitchCase": 1}]
+        "indent": [2, 2, {"SwitchCase": 1}],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
